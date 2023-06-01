@@ -45,7 +45,7 @@ spring:
       max-file-size: 30MB
       max-request-size: 30MB
 
-  # json序列化相关配置
+  # json序列化相关配置1
   jackson:
     serialization:
       write-enums-using-to-string: true
