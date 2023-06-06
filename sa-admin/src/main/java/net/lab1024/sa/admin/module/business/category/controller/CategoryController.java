@@ -29,7 +29,7 @@ import java.util.List;
  */
 @OperateLog
 @RestController
-@Api(tags = AdminSwaggerTagConst.Business.MANAGER_CATEGORY)
+//@Api(tags = AdminSwaggerTagConst.Business.MANAGER_CATEGORY)
 public class CategoryController extends AdminBaseController {
 
     @Autowired
