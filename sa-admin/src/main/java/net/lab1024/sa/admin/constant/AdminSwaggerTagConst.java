@@ -25,6 +25,13 @@ public class AdminSwaggerTagConst extends SwaggerTagConst {
         public static final String OA_INVOICE = "OA办公-发票信息";
 
         public static final String OA_NOTICE = "OA办公-通知公告";
+
+        public static final String TY_IP= "虚拟IP";
+
+        public static final String TY_FOOT_BASKET_BALL_LIST= "赛事列表";
+
+        public static final String TY_FOOT_BALL_LIST= "足球赛事";
+
     }
 
 
