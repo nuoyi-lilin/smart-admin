@@ -15,10 +15,13 @@ import net.lab1024.sa.common.common.domain.ResponseDTO;
  */
 public interface ITyFootballScoreResultService extends IService<TyFootballScoreResult> {
 
+    /** 晚上00：00：00调用一次 **/
     void getFootballScoreResult();
-
+    /** 重要比赛 一分钟调一次 */
     void getFootballScoreImportant();
 
+    /** 正在比赛  十秒调一次 */
+    void getFootballScoreIng();
 
     ResponseDTO getFootBallList(FootballScoreResultVo footballScoreResultVo);
 }

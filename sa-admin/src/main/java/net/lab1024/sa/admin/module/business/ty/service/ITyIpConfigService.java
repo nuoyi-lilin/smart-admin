@@ -18,4 +18,7 @@ public interface ITyIpConfigService extends IService<TyIpConfig> {
 
     public String  getIp() ;
 
+    /** 一个小时调一次 */
+    public void setImportUrl();
+
 }

@@ -15,7 +15,6 @@ import net.lab1024.sa.admin.module.business.ty.service.ITyFootballScoreResultSer
 import net.lab1024.sa.admin.module.business.ty.service.ITyIpConfigService;
 import net.lab1024.sa.common.common.domain.ResponseDTO;
 import net.lab1024.sa.common.common.httpclient.HttpClientUtils;
-import net.lab1024.sa.common.common.util.AutoUrl;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
