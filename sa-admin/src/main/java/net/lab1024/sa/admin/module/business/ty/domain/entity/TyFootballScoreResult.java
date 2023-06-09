@@ -92,6 +92,9 @@ public class TyFootballScoreResult implements Serializable {
     @ApiModelProperty(value = "创建时间")
     private LocalDateTime createTime;
 
+    @ApiModelProperty(value = "版本号")
+    private String version;
+
 
 
 }

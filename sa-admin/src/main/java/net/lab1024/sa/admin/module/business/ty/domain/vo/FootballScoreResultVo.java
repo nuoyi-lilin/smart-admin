@@ -19,4 +19,7 @@ public class FootballScoreResultVo {
     @ApiModelProperty("体育类型 soccer：足球 bkb：篮球")
     private String type;
 
+    @ApiModelProperty("联赛名称")
+    private String competitionName;
+
 }
