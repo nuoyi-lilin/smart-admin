@@ -38,6 +38,9 @@ public class TyIpConfig implements Serializable {
     @ApiModelProperty(value = "ip")
     private String ip;
 
+    @ApiModelProperty(value = "备注")
+    private String remark;
+
     @ApiModelProperty(value = "创建时间")
     private LocalDateTime createTime;
 

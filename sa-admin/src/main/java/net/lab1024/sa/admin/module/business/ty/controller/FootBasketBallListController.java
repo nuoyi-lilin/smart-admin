@@ -31,4 +31,13 @@ public class FootBasketBallListController {
     public void getFootballScoreImportant() {
         footballScoreResultService.getFootballScoreImportant();
     }
+
+    @ApiOperation("手动获取正在比赛数据")
+    @GetMapping("/getFootballScoreIng")
+    @NoNeedLogin
+    public void getFootballScoreIng() {
+        footballScoreResultService.getFootballScoreIng();
+    }
+
+
 }

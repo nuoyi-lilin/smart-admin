@@ -6,12 +6,8 @@ import lombok.extern.slf4j.Slf4j;
 import net.lab1024.sa.admin.module.business.ty.domain.entity.TyIpConfig;
 import net.lab1024.sa.admin.module.business.ty.mapper.TyIpConfigMapper;
 import net.lab1024.sa.admin.module.business.ty.service.ITyIpConfigService;
-import net.lab1024.sa.common.common.domain.ResponseDTO;
 import net.lab1024.sa.common.common.httpclient.HttpClientUtils;
-import org.apache.http.client.ClientProtocolException;
 import org.springframework.stereotype.Service;
-
-import java.sql.Wrapper;
 
 /**
  * <p>
@@ -48,5 +44,19 @@ public class TyIpConfigServiceImpl extends ServiceImpl<TyIpConfigMapper, TyIpCon
         TyIpConfig one = this.getOne(queryWrapper);
         return one.getIp();
     }
+
+    @Override
+    public void setImportUrl() {
+        QueryWrapper queryWrapper = new QueryWrapper();
+        queryWrapper.eq("id","1");
+        TyIpConfig one = this.getOne(queryWrapper);
+        String newsUrl = AutoUrl.getNewsUrl(one.getIp());
+        QueryWrapper queryWrapper1 = new QueryWrapper();
+        queryWrapper1.eq("id","2");
+        TyIpConfig one1 = this.getOne(queryWrapper1);
+        one1.setUrl(newsUrl);
+        this.updateById(one1);
+    }
+
 
 }

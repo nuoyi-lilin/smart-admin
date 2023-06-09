@@ -106,14 +106,10 @@ public class HttpClientUtils {
 //        params1.put("start","2023-06-0511:46:00");
 //        params1.put("init","1");
 //        params1.put("platform","www");
-        String url = "https://www.dongqiudi.com/api/data/tab/league/new/index?start=2023-06-0615:15:25&init=1&platform=www";
+        String url = "https://dongqiudi.com/api/data/detail/match/53606362?platform=www&version=754&version=754";
         Map<String, String> params = new HashMap<>();
-        params.put("start","2023-06-0511:46:00");
-        params.put("init","1");
-        params.put("platform","www");
         String replace = doGetOfReturnJson(urls).trim();
-        System.out.println(replace);
-        Map<String, Object> stringObjectMap = doGet(url, null, null, "113.236.119.118:40047");
+        Map<String, Object> stringObjectMap = doGet(url, null, null, replace);
         System.out.println(stringObjectMap);
     }
 
