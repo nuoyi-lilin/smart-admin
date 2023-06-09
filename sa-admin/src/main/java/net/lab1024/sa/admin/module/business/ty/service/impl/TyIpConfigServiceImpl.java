@@ -7,6 +7,7 @@ import net.lab1024.sa.admin.module.business.ty.domain.entity.TyIpConfig;
 import net.lab1024.sa.admin.module.business.ty.mapper.TyIpConfigMapper;
 import net.lab1024.sa.admin.module.business.ty.service.ITyIpConfigService;
 import net.lab1024.sa.common.common.httpclient.HttpClientUtils;
+import net.lab1024.sa.common.common.util.AutoUrl;
 import org.springframework.stereotype.Service;
 
 /**
